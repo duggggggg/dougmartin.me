@@ -1,43 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dougmartin.me</title>
-    <style>
-      body {
-        margin: 0;
-        background-color: #5d5d5d; /* Light gray background */
-        display: flex;
+<head>
+  <meta charset="UTF-8" />
+  <title>Doug Martin – Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 32px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+
+    .name-block h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 0.03em;
+    }
+
+    .name-block h2 {
+      margin: 4px 0 0;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #555;
+    }
+
+    .contact {
+      font-size: 0.95rem;
+      text-align: right;
+    }
+
+    .contact div {
+      margin-bottom: 2px;
+    }
+
+    .contact a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #444;
+    }
+
+    section {
+      margin-bottom: 24px;
+    }
+
+    .summary p {
+      margin: 0 0 8px;
+    }
+
+    .job {
+      margin-bottom: 16px;
+    }
+
+    .job-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+
+    .job-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .job-meta {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .company {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    ul {
+      margin: 6px 0 0 18px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    @media (max-width: 600px) {
+      header {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        font-family: Arial, sans-serif;
+        align-items: flex-start;
       }
+      .contact {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="name-block">
+        <h1>Doug Martin</h1>
+      </div>
+      <div class="contact">
+        <div>🌎 Las Vegas, Nevada</div>
+        <div>🌐 <a href="https://www.linkedin.com/in/dougrm/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+        <div>✉️ <a href="mailto:doug@dougmartin.me">doug@dougmartin.me</a></div>
+      </div>
+    </header>
 
-      .image-container {
-        text-align: center;
-      }
+    <main>
 
-      img {
-        max-width: 50%;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      }
+      <section>
 
-      .caption {
-        margin-top: 1rem;
-        font-size: 1.2rem;
-        color: #fff;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="image-container">
-      <img src="images/flamingo.png" alt="Mechanical" />
-      <div class="caption">Stay tuned...</div>
-    </div>
-  </body>
+          <div class="company">Harvest (getharvest.com) · Remote · 2013 – 2025</div>
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title">Engineering Manager</div>
+            <div class="job-meta">2017 – 2025</div>
+          </div>
+          <ul>
+            <li>
+              Led and scaled high-performing software engineering teams including hiring,
+              performance management, and transitions and reorganizations as business needs arose.
+            </li>
+            <li>
+              Built teams from the ground up and successfully took over and stabilized
+              underperforming or inherited teams, improving delivery, morale, communication,
+              and accountability.
+            </li>
+            <li>
+              Managed cross-functional engineering organizations, overseeing software
+              development, QA, release processes, and operational excellence.
+            </li>
+            <li>
+              Stepped into VP-level leadership roles during executive turnover, providing
+              continuity, strategic direction, and executive-level decision making.
+            </li>
+            <li>
+              Guided the entire engineering organization through acquisition, integration, and
+              post-buyout layoffs with a focus on transparency, risk reduction, and business
+              continuity.
+            </li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title">Team Founder: Escalated Support</div>
+            <div class="job-meta">2013 – 2017</div>
+          </div>
+          <ul>
+            <li>
+              Founded and scaled an escalated support team, defining mission, workflows,
+              and service standards for high-impact customer and technical issues and
+              requests.
+            </li>
+            <li>
+              Led hiring, training, and mentoring while establishing escalation paths, SLAs, and
+              cross-functional collaboration with engineering, product, and design teams.
+            </li>
+            <li>
+              Reduced average resolution time and repeat escalations by implementing
+              root-cause analysis, post-incident reviews, and measurable performance
+              dashboards.
+            </li>
+          </ul>
+        </div>
+
+        <div class="company">Frost Electric Company · Aurora, IL · 2002 – 2013</div>
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title">Business Operations Manager</div>
+            <div class="job-meta">2005 – 2013</div>
+          </div>
+ 
+          <ul>
+            <li>
+              Oversaw daily business and project operations, optimizing processes, staffing,
+              and purchasing to improve efficiency and profitability.
+            </li>
+            <li>
+              Managed inventory control, payroll processing, tax reporting, and accounts
+              receivable/payable, ensuring accuracy, compliance, and timely reporting.
+            </li>
+            <li>
+              Supervised budgeting, forecasting, vendor management, and performance
+              tracking across the organization.
+            </li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title">Project Manager &amp; Estimator</div>
+            <div class="job-meta">2002 – 2005</div>
+          </div>
+          <ul>
+            <li>
+              Led end-to-end construction projects, coordinating schedules, subcontractors,
+              scope, and quality control to deliver projects on time and within budget.
+            </li>
+            <li>
+              Prepared accurate cost estimates, bids, and takeoffs by analyzing plans,
+              specifications, labor, and material costs.
+            </li>
+            <li>
+              Managed client communication, contracts, and change orders while tracking
+              costs, risks, and project performance.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
 </html>
